@@ -21,7 +21,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 The script performs the following:
 
 
-1. Merges the training and the test sets to create one data set.
+## Merges the training and the test sets to create one data set.
 
 subject_train - contains training data for the subjects who performed 
 the activity for each window sample.
@@ -41,7 +41,7 @@ Y_test -  contains the Test labels.
 Y_all - combines the rows in Y_train and Y_test into a single data table.
 
 
-2. Extracts only the measurements on the mean and standard deviation for 
+## Extracts only the measurements on the mean and standard deviation for 
 each measurement. 
 
 Get all observation variable names in a features data table called "features".
@@ -51,18 +51,18 @@ meanOrStd - contains all column names that include -mean() or -std().
 meanOrStd is used to filter the associated observations in X_all.
 
 
-3. Uses descriptive activity names to name the activities in the data set
+## Uses descriptive activity names to name the activities in the data set
 
 activity_labels - the activity_labels table is used to map the activity
 names in Y_all.
 
 
-4. Appropriately labels the data set with descriptive variable names. 
+## Appropriately labels the data set with descriptive variable names. 
 
 merged - data table used to combine all tables into associated observations.
 
 
-5. From the data set in step 4, creates a second, independent tidy data set 
+## From the data set in step 4, creates a second, independent tidy data set 
 with the average of each variable for each activity and each subject.
 
 subjectList - unique subjects list.
